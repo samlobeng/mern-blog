@@ -10,7 +10,7 @@ export default function Header() {
     <Navbar className = 'border-b-2'>
         <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'> 
             <span className='px-2 py-1 bg-teal-500 text-white rounded-lg font-montserrat'>Horizon</span>
-             by NextWave
+             by QrinNext
         </Link>
         <form>
             <TextInput type='text' placeholder='Search...' rightIcon={AiOutlineSearch} className='hidden lg:inline' />
