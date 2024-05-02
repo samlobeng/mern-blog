@@ -49,7 +49,7 @@ const navigate = useNavigate()
       <div className='flex p-3 max-w-6xl mx-auto flex-col md:flex-row gap-5'>
         <div className="flex-1">
         <Link to="/sign-up" className='font-bold dark:text-white text-4xl'> 
-            <span className='px-2 py-1 bg-teal-500 text-white rounded-lg font-montserrat'>QrinnyVerse</span>
+            <span className='px-2 py-1 bg-teal-500 text-white rounded-lg font-montserrat'>Q.verse</span>
         </Link>
         <p className='mt-5 text-sm leading-8 bg-gray-50 p-5'>
           QrinnyVerse, developed by QrinNext, is a dynamic blog web app designed for both seasoned and new bloggers.
