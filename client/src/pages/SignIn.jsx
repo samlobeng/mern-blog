@@ -8,6 +8,7 @@ const [errorMessage, setErrorMessage] = useState(null)
 const [isLoading, setIsLoading] = useState(false)
 const [showAlert, setShowAlert] = useState(true)
 const navigate = useNavigate()
+
   const handleChange = (e) => {
     setFormData({...formData, [e.target.id]: e.target.value.trim()})
   }
@@ -77,7 +78,7 @@ const navigate = useNavigate()
               </Button>
           </form>
           <div className="mt-5">
-            Don't have an account? &nbsp;<Link to="/sign-up" className='text-blue-500'>Sign Up</Link>
+            Dont have an account? &nbsp;<Link to="/sign-up" className='text-blue-500'>Sign Up</Link>
           </div>
           {
             errorMessage && showAlert &&(

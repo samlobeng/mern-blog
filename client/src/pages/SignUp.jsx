@@ -8,6 +8,7 @@ const [errorMessage, setErrorMessage] = useState(null)
 const [isLoading, setIsLoading] = useState(false)
 const [showAlert, setShowAlert] = useState(true)
 const navigate = useNavigate()
+
   const handleChange = (e) => {
     setFormData({...formData, [e.target.id]: e.target.value.trim()})
     console.log(formData)
@@ -61,15 +62,15 @@ const navigate = useNavigate()
         <div className="flex-1">
           <form className='flex flex-col gap-5' onSubmit={handleSubmit}>
             <div>
-            <Label value='Your Username'/>
+            <Label value='Username'/>
             <TextInput type = "text" placeholder='Username' id='username' onChange={handleChange}/>
             </div>
             <div>
-            <Label value='Your Email'/>
+            <Label value='Email'/>
             <TextInput type = "email" placeholder='name@qrinnyverse.com' id='email' onChange={handleChange} />
             </div>
             <div>
-            <Label value='Your Password'/>
+            <Label value='Password'/>
             <TextInput type = "password" placeholder='Password' id='password'onChange={handleChange} />
             </div>
             <Button type = "submit" className='bg-teal-500' disabled={isLoading}>
